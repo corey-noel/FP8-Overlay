@@ -1,0 +1,66 @@
+<html>
+<head>
+<link rel="stylesheet" href="css/base.css" type="text/css" charset="utf-8">
+<link rel="stylesheet" href="css/game_2camera_doubles.css" type="text/css" charset="utf-8">
+</head>
+
+<body>
+<script src="js/jquery-2.0.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/countries.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/maincontrol.js" type="text/javascript" charset="utf8"></script>
+
+<script type="text/javascript">
+    init();
+
+    function updateAll() {
+        updateText("#teamScore1", jsonDoc.teamScore1);
+        updateText("#teamScore2", jsonDoc.teamScore2);
+        updateText("#teamLosers1", getLosers(jsonDoc.teamLosers1));
+        updateText("#teamLosers2", getLosers(jsonDoc.teamLosers2));
+
+        updateText("#tName1", concatPlayerName(jsonDoc.tName1, jsonDoc.tSponsor1));
+        updateText("#tTwitter1", getTwitter(jsonDoc.tTwitter1));
+        updatePlayerIcon("#tChar1", jsonDoc.tPort1, jsonDoc.tCharacter1, jsonDoc.teamColor1);
+
+        updateText("#tName2", concatPlayerName(jsonDoc.tName2, jsonDoc.tSponsor2));
+        updateText("#tTwitter2", getTwitter(jsonDoc.tTwitter2));
+        updatePlayerIcon("#tChar2", jsonDoc.tPort2, jsonDoc.tCharacter2, jsonDoc.teamColor1);
+
+        updateText("#tName3", concatPlayerName(jsonDoc.tName3, jsonDoc.tSponsor3));
+        updateText("#tTwitter3", getTwitter(jsonDoc.tTwitter3));
+        updatePlayerIcon("#tChar3", jsonDoc.tPort3, jsonDoc.tCharacter3, jsonDoc.teamColor2);
+
+        updateText("#tName4", concatPlayerName(jsonDoc.tName4, jsonDoc.tSponsor4));
+        updateText("#tTwitter4", getTwitter(jsonDoc.tTwitter4));
+        updatePlayerIcon("#tChar4", jsonDoc.tPort4, jsonDoc.tCharacter4, jsonDoc.teamColor2);
+
+
+        updateText("#eventName", jsonDoc.eventName);
+        updateText("#bracketLocation", concatLocation(jsonDoc.bracketLocation, jsonDoc.bestOf));
+    }
+</script>
+
+<img id="overlayImage" src="images/FP8_Overlay1_doubles.png" />
+
+<div id="teamScore1" class="text score"></div>
+<div id="teamScore2" class="text score"></div>
+<div id="teamLosers1" class="text losers"></div>
+<div id="teamLosers2" class="text losers"></div>
+<div id="eventName" class="text infoSmall"></div>
+<div id="bracketLocation" class="text infoSmall"></div>
+
+<div id="tName1" class="text"></div>
+<div id="tTwitter1" class="text"></div>
+<div id="tChar1" class="teamChar1 charBlock"></div>
+<div id="tName2" class="text"></div>
+<div id="tTwitter2" class="text"></div>
+<div id="tChar2" class="teamChar1 charBlock"></div>
+<div id="tName3" class="text"></div>
+<div id="tTwitter3" class="text"></div>
+<div id="tChar3" class="teamChar2 charBlock"></div>
+<div id="tName4" class="text"></div>
+<div id="tTwitter4" class="text"></div>
+<div id="tChar4" class="teamChar2 charBlock"></div>
+
+</body>
+</html>

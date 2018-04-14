@@ -1,0 +1,50 @@
+<html>
+<head>
+
+<link rel="stylesheet" href="css/base.css" type="text/css" charset="utf-8">
+<link rel="stylesheet" href="css/game_2camera_singles.css" type="text/css" charset="utf-8">
+<script src="js/jquery-2.0.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/maincontrol.js" type="text/javascript" charset="utf8"></script>
+
+</head>
+
+<body>
+<script type="text/javascript">
+    init();
+
+    function updateAll() {
+        updateText("#pName1", concatPlayerName(jsonDoc.pName1, jsonDoc.pSponsor1), 250);
+        updateText("#pName2", concatPlayerName(jsonDoc.pName2, jsonDoc.pSponsor2), 250);
+        updateText("#pTwitter1", getTwitter(jsonDoc.pTwitter1));
+        updateText("#pTwitter2", getTwitter(jsonDoc.pTwitter2));
+        updateText("#pScore1", jsonDoc.pScore1);
+        updateText("#pScore2", jsonDoc.pScore2);
+        updateText("#pLosers1", getLosers(jsonDoc.pLosers1));
+        updateText("#pLosers2", getLosers(jsonDoc.pLosers2));
+        updatePlayerIcon("#pChar1", jsonDoc.pPort1, jsonDoc.pCharacter1);
+        updatePlayerIcon("#pChar2", jsonDoc.pPort2, jsonDoc.pCharacter2);
+
+        updateText("#eventName", jsonDoc.eventName);
+        updateText("#bracketLocation", concatLocation(jsonDoc.bracketLocation, jsonDoc.bestOf));
+    }
+</script>
+
+<img id="overlayImage" src="images/FP8_Overlay1.png" />
+
+<div id="pName1" class="text"></div>
+<div id="pScore1" class="text score"></div>
+<div id="pLosers1" class="text losers"></div>
+<div id="pChar1" class="charBlock"></div>
+<div id="pTwitter1" class="text"></div>
+
+<div id="pName2" class="text"></div>
+<div id="pScore2" class="text score"></div>
+<div id="pLosers2" class="text losers"></div>
+<div id="pChar2" class="charBlock"></div>
+<div id="pTwitter2" class="text"></div>
+
+<div id="eventName" class="text infoSmall"></div>
+<div id="bracketLocation" class="text infoSmall"></div>
+
+</body>
+</html>

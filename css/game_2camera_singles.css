@@ -1,0 +1,76 @@
+#pLosers1 {
+    left: 0px;
+    top: 545px;
+    width: 300px;
+}
+
+#pLosers2 {
+    right: 0px;
+    top: 545px;
+    width: 300px;
+
+}
+
+#pName1 {
+    left:0px;
+    top:585px;
+    width:300px;
+    font-size:24px;
+}
+
+#pName2 {
+    right:0px;
+    top:585px;
+    width:300px;
+    font-size:24px;
+}
+
+#pScore1 {
+    left:220px;
+    top:500px;
+    width:80px;
+    font-size:50px;
+}
+
+#pScore2 {
+    right:220px;
+    top:500px;
+    width:80px;
+    font-size:50px;
+}
+
+#pChar1 {
+    left: 140px;
+    top: 22px;
+}
+
+#pChar2 {
+    left: 1638px;
+    top: 22px;
+}
+
+#eventName {
+    left: 0px;
+    top: 680px;
+    width: 300px;
+}
+
+#bracketLocation {
+    right: 0px;
+    top: 680px;
+    width: 300px;
+}
+
+#pTwitter1 {
+    left:0px;
+    top:620px;
+    width:300px;
+    font-size:22px;
+}
+
+#pTwitter2 {
+    right:0px;
+    top:620px;
+    width:300px;
+    font-size:22px;
+}

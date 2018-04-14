@@ -1,0 +1,42 @@
+body {
+    margin:0px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#overlayImage {
+    z-index: -2;
+}
+
+.text {
+    position: absolute;
+    text-align: center;
+    font-family: 'Verdana';
+    font-weight: bold;
+    color:#CCC;
+}
+
+.losers {
+    font-style: italic;
+    font-size: 22px;
+}
+
+.playerIcon {
+    width: 24px;
+    height: 24px;
+    margin: auto;
+    display: block;
+}
+
+.charBlock {
+    position: absolute;
+    display: block;
+    height: 23px;
+    width: 23px;
+    background-color: #0e1529;
+    opacity: 0;
+}
+
+.infoSmall {
+    font-style: italic;
+    font-size: 18px;
+}

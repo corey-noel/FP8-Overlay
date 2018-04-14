@@ -1,0 +1,99 @@
+<!DOCTYPE StreamControlLayout>
+<layout width="600" height="260" tabbed="1">
+  <tab name="General/Singles">
+    <label x="10" y="10" width="80" height="20">Event Name</label>
+    <lineEdit id="eventName" x="100" y="10" width="380" height="20">Melee Doubles</lineEdit>
+    <label x="10" y="40" width="80" height="20">Bracket Location</label>
+    <lineEdit id="bracketLocation" x="100" y="40" width="380" height="20">Winner's Finals</lineEdit>
+    <label x="490" y="10" width="50" height="20">Best of</label>
+    <spinBox id="bestOf" x="540" y="10" width="40" height="20" maximum="9" />
+
+    <label x="10" y="50" width="575" height="20">_________________________________________________________________________________________________________</label>
+
+    <label x="10" y="70" width="50" height="20">Player 1</label>
+    <spinBox id="pScore1" x="70" y="70" width="40" height="23" maximum="99" />
+    <checkBox id="pLosers1" x="120" y="70" width="50" height="20">Losers</checkBox>
+
+    <lineEdit id="pName1" x="10" y="100" width="160" height="20" dataSet="players.csv" dataField="1">Player 1</lineEdit>
+    <label x="180" y="100" width="20" height="20">Port</label>
+    <spinBox id="pPort1" x="210" y="100" width="40" height="23" maximum="4" />
+    <lineEdit id="pCharacter1" x="260" y="100" width="100" height="20" dataSet="players.csv" dataField="4" master="pName1">Character</lineEdit>
+    <lineEdit id="pSponsor1" x="370" y="100" width="50" height="20" dataSet="players.csv" master="pName1" dataField="3">Sponsor</lineEdit>
+    <lineEdit id="pCountry1" x="430" y="100" width="50" height="20" dataSet="players.csv" dataField="2" master="pName1">Country</lineEdit>
+    <lineEdit id="pTwitter1" x="490" y="100" width="100" height="20" dataSet="players.csv" dataField="5" master="pName1">Twitter</lineEdit>
+
+    <label x="10" y="130" width="50" height="20">Player 2</label>
+    <spinBox id="pScore2" x="70" y="130" width="40" height="23" maximum="99" />
+    <checkBox id="pLosers2" x="120" y="130" width="50" height="20">Losers</checkBox>
+
+    <lineEdit id="pName2" x="10" y="160" width="160" height="20" dataSet="players.csv" dataField="1">Player 2</lineEdit>
+    <label x="180" y="160" width="20" height="20">Port</label>
+    <spinBox id="pPort2" x="210" y="160" width="40" height="23" maximum="4" />
+    <lineEdit id="pCharacter2" x="260" y="160" width="100" height="20" dataSet="players.csv" dataField="4" master="pName2">Character</lineEdit>
+    <lineEdit id="pSponsor2" x="370" y="160" width="50" height="20" dataSet="players.csv" master="pName2" dataField="3">Sponsor</lineEdit>
+    <lineEdit id="pCountry2" x="430" y="160" width="50" height="20" dataSet="players.csv" dataField="2" master="pName2">Country</lineEdit>
+    <lineEdit id="pTwitter2" x="490" y="160" width="100" height="20" dataSet="players.csv" dataField="5" master="pName2">Twitter</lineEdit>
+
+    <button type="reset" x="545" y="70" width="45" height="23" tooltip="Reset Player Fields" id="reset" reset="pName1,pCountry1,pScore1,pSponsor1,pPort1,pCharacter1,pLosers1,pTwitter1,pName2,pCountry2,pScore2,pSponsor2,pPort2,pCharacter2,pLosers2,pTwitter2">Clear</button>
+    <button type="swap" x="490" y="70" width="45" height="23" tooltip="Swap Player Fields" id="swap" swapSet1="pName1,pScore1,pCountry1,pSponsor1,pPort1,pCharacter1,pLosers1,pTwitter1" swapSet2="pName2,pScore2,pCountry2,pSponsor2,pPort2,pCharacter2,pLosers2,pTwitter2">Swap</button>
+  </tab>
+
+  <tab name="Doubles">
+    <label x="10" y="10" width="50" height="20">Team 1</label>
+    <comboBox id="teamColor1" x="70" y="10" width="70" height="20">
+      <comboItem>Red</comboItem>
+      <comboItem>Green</comboItem>
+      <comboItem>Blue</comboItem>
+    </comboBox>
+    <spinBox id="teamScore1" x="150" y="10" width="40" height="23" maximum="99" />
+    <checkBox id="teamLosers1" x="200" y="10" width="50" height="20">Losers</checkBox>
+
+    <lineEdit id="tName1" x="10" y="40" width="160" height="20" dataSet="players.csv" dataField="1">Player 1</lineEdit>
+    <label x="180" y="40" width="20" height="20">Port</label>
+    <spinBox id="tPort1" x="210" y="40" width="40" height="23" maximum="4" />
+    <lineEdit id="tCharacter1" x="260" y="40" width="100" height="20" dataSet="players.csv" dataField="4" master="tName1">Character</lineEdit>
+    <lineEdit id="tSponsor1" x="370" y="40" width="50" height="20" dataSet="players.csv" master="tName1" dataField="3">Sponsor</lineEdit>
+    <lineEdit id="tCountry1" x="430" y="40" width="50" height="20" dataSet="players.csv" dataField="2" master="tName1" >Country</lineEdit>
+    <lineEdit id="tTwitter1" x="490" y="40" width="100" height="20" dataSet="players.csv" dataField="5" master="tName1">Twitter</lineEdit>
+
+
+
+    <lineEdit id="tName2" x="10" y="70" width="160" height="20" dataSet="players.csv" dataField="1">Player 2</lineEdit>
+    <label x="180" y="70" width="20" height="20">Port</label>
+    <spinBox id="tPort2" x="210" y="70" width="40" height="23" maximum="4" />
+    <lineEdit id="tCharacter2" x="260" y="70" width="100" height="20" dataSet="players.csv" dataField="4" master="tName2">Character</lineEdit>
+    <lineEdit id="tSponsor2" x="370" y="70" width="50" height="20" dataSet="players.csv" master="tName2" dataField="3">Sponsor</lineEdit>
+    <lineEdit id="tCountry2" x="430" y="70" width="50" height="20" dataSet="players.csv" dataField="2" master="tName2" >Country</lineEdit>
+    <lineEdit id="tTwitter2" x="490" y="70" width="100" height="20" dataSet="players.csv" dataField="5" master="tName2">Twitter</lineEdit>
+
+    <label x="10" y="100" width="50" height="20">Team 2</label>
+    <comboBox id="teamColor2" x="70" y="100" width="70" height="20">
+      <comboItem>Red</comboItem>
+      <comboItem>Green</comboItem>
+      <comboItem>Blue</comboItem>
+    </comboBox>
+    <spinBox id="teamScore2" x="150" y="100" width="40" height="23" maximum="99" />
+    <checkBox id="teamLosers2" x="200" y="100" width="50" height="20">Losers</checkBox>
+
+    <lineEdit id="tName3" x="10" y="130" width="160" height="20" dataSet="players.csv" dataField="1">Player 3</lineEdit>
+    <label x="180" y="130" width="20" height="20">Port</label>
+    <spinBox id="tPort3" x="210" y="130" width="40" height="23" maximum="4" />
+    <lineEdit id="tCharacter3" x="260" y="130" width="100" height="20" dataSet="players.csv" dataField="4" master="tName3">Character</lineEdit>
+    <lineEdit id="tSponsor3" x="370" y="130" width="50" height="20" dataSet="players.csv" master="tName3" dataField="3">Sponsor</lineEdit>
+    <lineEdit id="tCountry3" x="430" y="130" width="50" height="20" dataSet="players.csv" dataField="2" master="tName3" >Country</lineEdit>
+    <lineEdit id="tTwitter3" x="490" y="130" width="100" height="20" dataSet="players.csv" dataField="5" master="tName3">Twitter</lineEdit>
+
+
+    <lineEdit id="tName4" x="10" y="160" width="160" height="20" dataSet="players.csv" dataField="1">Player 4</lineEdit>
+    <label x="180" y="160" width="20" height="20">Port</label>
+    <spinBox id="tPort4" x="210" y="160" width="40" height="23" maximum="4" />
+    <lineEdit id="tCharacter4" x="260" y="160" width="100" height="20" dataSet="players.csv" dataField="4" master="tName4">Character</lineEdit>
+    <lineEdit id="tSponsor4" x="370" y="160" width="50" height="20" dataSet="players.csv" master="tName4" dataField="3">Sponsor</lineEdit>
+    <lineEdit id="tCountry4" x="430" y="160" width="50" height="20" dataSet="players.csv" dataField="2" master="tName4" >Country</lineEdit>
+    <lineEdit id="tTwitter4" x="490" y="160" width="100" height="20" dataSet="players.csv" dataField="5" master="tName4">Twitter</lineEdit>
+
+
+    <button type="swap" x="490" y="10" width="45" height="23" tooltip="Swap Teams" id="swapTeams" swapSet1="teamColor1,teamScore1,teamLosers1,tSponsor1,tName1,tCountry1,tPort1,tCharacter1,tSponsor2,tName2,tCountry2,tPort2,tCharacter2,tTwitter1,tTwitter2" swapSet2="teamColor2,teamScore2,teamLosers2,tSponsor3,tName3,tCountry3,tPort3,tCharacter3,tSponsor4,tName4,tCountry4,tPort4,tCharacter4,tTwitter3,tTwitter4">Swap</button>
+    <button type="reset" x="540" y="10" width="45" height="23" tooltip="Reset Teams Fields" id="resetTeams" reset="teamColor1,teamScore1,teamLosers1,tSponsor1,tName1,tCountry1,tPort1,tCharacter1,tSponsor2,tName2,tCountry2,tPort2,tCharacter2,teamColor2,teamScore2,teamLosers2,tSponsor3,tName3,tCountry3,tPort3,tCharacter3,tSponsor4,tName4,tCountry4,tPort4,tCharacter4,tTwitter1,tTwitter2,tTwitter3,tTwitter4">Clear</button>
+  </tab>
+</layout>

@@ -1,0 +1,108 @@
+#teamLosers1 {
+    left: 0px;
+    top: 545px;
+    width: 300px;
+}
+
+#teamLosers2 {
+    right: 0px;
+    top: 545px;
+    width: 300px;
+
+}
+
+#teamScore1 {
+    left:220px;
+    top:500px;
+    width:80px;
+    font-size:50px;
+}
+
+#teamScore2 {
+    right:220px;
+    top:500px;
+    width:80px;
+    font-size:50px;
+}
+
+.teamChar1 {
+    left: 140px;
+    top: 22px;
+}
+
+.teamChar2 {
+    left: 1638px;
+    top: 22px;
+}
+
+#eventName {
+    left: 0px;
+    top: 750px;
+    width: 300px;
+}
+
+#bracketLocation {
+    right: 0px;
+    top: 750px;
+    width: 300px;
+}
+
+#tName1 {
+    left:0px;
+    top:585px;
+    width:300px;
+    font-size:24px;
+}
+
+#tTwitter1 {
+    left:0px;
+    top:620px;
+    width:300px;
+    font-size:22px;
+}
+
+#tName2 {
+    left:0px;
+    top:665px;
+    width:300px;
+    font-size:24px;
+}
+
+#tTwitter2 {
+    left:0px;
+    top:700px;
+    width:300px;
+    font-size:22px;
+}
+
+#tName3 {
+    right:0px;
+    top:585px;
+    width:300px;
+    font-size:24px;
+}
+
+#tTwitter3 {
+    right:0px;
+    top:620px;
+    width:300px;
+    font-size:22px;
+}
+
+#tName4 {
+    right:0px;
+    top:665px;
+    width:300px;
+    font-size:24px;
+}
+
+#tTwitter4 {
+    right:0px;
+    top:700px;
+    width:300px;
+    font-size:22px;
+}
+
+
+
+

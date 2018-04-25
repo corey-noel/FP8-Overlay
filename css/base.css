@@ -1,42 +1,65 @@
 body {
-    margin:0px;
-    background-color: rgba(0, 0, 0, 0);
+  margin:0px;
+  background-color:rgba(0, 0, 0, 0);
 }
 
 #overlayImage {
-    z-index: -2;
+  z-index:-2;
+}
+
+.left-col {
+  left:0px;
+  width:300px;
+}
+
+.right-col {
+  right:0px;
+  width:300px;
 }
 
 .text {
-    position: absolute;
-    text-align: center;
-    font-family: 'Verdana';
-    font-weight: bold;
-    color:#CCC;
+  position:absolute;
+  text-align:center;
+  font-family:'Verdana';
+  font-weight:bold;
+  color:#CCC;
 }
 
 .losers {
-    font-style: italic;
-    font-size: 22px;
+  font-style:italic;
+  font-size:22px;
 }
 
 .playerIcon {
-    width: 24px;
-    height: 24px;
-    margin: auto;
-    display: block;
+  width:24px;
+  height:24px;
+  margin:auto;
+  display:block;
 }
 
 .charBlock {
-    position: absolute;
-    display: block;
-    height: 23px;
-    width: 23px;
-    background-color: #0e1529;
-    opacity: 0;
+  position:absolute;
+  display:block;
+  height:23px;
+  width:23px;
+  background-color:#0e1529;
+  opacity:0;
 }
 
 .infoSmall {
-    font-style: italic;
-    font-size: 18px;
+  font-style:italic;
+  font-size:18px;
+}
+
+.score {
+  width:80px;
+  font-size:50px;
+}
+
+.name {
+  font-size:24px;
+}
+
+.twitter {
+  font-size:22px;
 }

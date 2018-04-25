@@ -1,108 +1,47 @@
-#teamLosers1 {
-    left: 0px;
-    top: 545px;
-    width: 300px;
-}
-
-#teamLosers2 {
-    right: 0px;
-    top: 545px;
-    width: 300px;
-
-}
-
 #teamScore1 {
-    left:220px;
-    top:500px;
-    width:80px;
-    font-size:50px;
+  left:220px;
 }
 
 #teamScore2 {
-    right:220px;
-    top:500px;
-    width:80px;
-    font-size:50px;
+  right:220px;
+}
+
+.score {
+  top:500px;
+}
+
+.losers {
+  top:535px;
 }
 
 .teamChar1 {
-    left: 140px;
-    top: 22px;
+  left:146px;
 }
 
 .teamChar2 {
-    left: 1638px;
-    top: 22px;
+  left:1639px;
 }
 
-#eventName {
-    left: 0px;
-    top: 750px;
-    width: 300px;
+.charBlock {
+  top:17px;
 }
 
-#bracketLocation {
-    right: 0px;
-    top: 750px;
-    width: 300px;
+.infoSmall {
+  top:728px;
 }
 
-#tName1 {
-    left:0px;
-    top:585px;
-    width:300px;
-    font-size:24px;
+.nameRow1 {
+  top:570px;
 }
 
-#tTwitter1 {
-    left:0px;
-    top:620px;
-    width:300px;
-    font-size:22px;
+.nameRow2 {
+  top:645px;
 }
 
-#tName2 {
-    left:0px;
-    top:665px;
-    width:300px;
-    font-size:24px;
+.twitterRow1 {
+  top:602px;
 }
 
-#tTwitter2 {
-    left:0px;
-    top:700px;
-    width:300px;
-    font-size:22px;
+.twitterRow2 {
+  top:677px;
 }
-
-#tName3 {
-    right:0px;
-    top:585px;
-    width:300px;
-    font-size:24px;
-}
-
-#tTwitter3 {
-    right:0px;
-    top:620px;
-    width:300px;
-    font-size:22px;
-}
-
-#tName4 {
-    right:0px;
-    top:665px;
-    width:300px;
-    font-size:24px;
-}
-
-#tTwitter4 {
-    right:0px;
-    top:700px;
-    width:300px;
-    font-size:22px;
-}
-
-
-
-

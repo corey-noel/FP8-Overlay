@@ -67,15 +67,18 @@ function updatePlayerIcon(tagName, port, char, teamColor = null, dur = 250, heig
     }
 
     var icon = '<img class="playerIcon" src="images/chars/' + res + '.png">';
-    if ($(tagName).html() == icon) { return; }
+    var offset = ((port - 1) * 39) + "px";
 
-    var offset = (port - 1) * 39;
+    console.log($(tagName).css("margin-left"));
+
+    if ($(tagName).html() == icon && $(tagName).css("margin-left") == offset) { return; }
+
     animating = true;
     $(tagName).animate(
         {'padding-top': height + "px", 'opacity':0},
         {'duration': dur, 'queue': false, 'complete': function() {
             $(tagName).html(icon);
-            $(tagName).css("margin-left", offset + "px");
+            $(tagName).css("margin-left", offset);
             $(tagName).show();
             $(tagName).css("padding-top", "-" + height + "px");
             $(tagName).animate(
